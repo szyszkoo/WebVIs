@@ -10,9 +10,13 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Controls" Type="Folder"/>
+		<Item Name="Controls" Type="Folder">
+			<Item Name="ShiftRegisterCluster.ctl" Type="VI" URL="../Controls/ShiftRegisterCluster.ctl"/>
+		</Item>
 		<Item Name="Documentation" Type="Folder"/>
 		<Item Name="subVIs" Type="Folder">
+			<Item Name="Clear_DAQ_Tasks.vi" Type="VI" URL="../subVIs/Clear_DAQ_Tasks.vi"/>
+			<Item Name="TempAcqSubVI.vi" Type="VI" URL="../subVIs/TempAcqSubVI.vi"/>
 			<Item Name="TempConfigurationSubVI.vi" Type="VI" URL="../subVIs/TempConfigurationSubVI.vi"/>
 		</Item>
 		<Item Name="mainVI.vi" Type="VI" URL="../mainVI.vi"/>
@@ -23,6 +27,7 @@
 				<Item Name="Check Special Tags.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Check Special Tags.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
+				<Item Name="DAQmx Clear Task.vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/configure/task.llb/DAQmx Clear Task.vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Accelerometer).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Accelerometer).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Charge).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Charge).vi"/>
