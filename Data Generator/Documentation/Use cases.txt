@@ -1,9 +1,0 @@
-Aplikacja winna obs³ugiwaæ:
-- Czujnik pó³przewodnikowy temperatury wbudowany w modu³ BNC-2120
-- Enkoder wbudowany w modu³ BNC-2120
-- Porty cyfrowe modu³u BNC-2120 (zarówno wejœcia, jak i wyjœcia)
-- Generator sygna³u wbudowany w modu³ BNC-2120 (obliczanie wartoœci skutecznej i czêstotliwoœci)
-
-Aktualizacja pomiarów co 500 ms.
-
-Mo¿liwoœæ symulacji danych 

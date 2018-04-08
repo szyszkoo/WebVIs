@@ -1,6 +1,15 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="17008000">
+	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
 	<Item Name="My Computer" Type="My Computer">
+		<Property Name="IOScan.Faults" Type="Str"></Property>
+		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
+		<Property Name="IOScan.NetWatchdogEnabled" Type="Bool">false</Property>
+		<Property Name="IOScan.Period" Type="UInt">10000</Property>
+		<Property Name="IOScan.PowerupMode" Type="UInt">0</Property>
+		<Property Name="IOScan.Priority" Type="UInt">9</Property>
+		<Property Name="IOScan.ReportModeConflict" Type="Bool">true</Property>
+		<Property Name="IOScan.StartEngineOnDeploy" Type="Bool">false</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.tcp.enabled" Type="Bool">false</Property>
@@ -16,10 +25,27 @@
 		<Item Name="Documentation" Type="Folder"/>
 		<Item Name="subVIs" Type="Folder">
 			<Item Name="Clear_DAQ_Tasks.vi" Type="VI" URL="../subVIs/Clear_DAQ_Tasks.vi"/>
+			<Item Name="DIConfigurationSubVI.vi" Type="VI" URL="../subVIs/DIConfigurationSubVI.vi"/>
+			<Item Name="EncoderConfigurationSubVI.vi" Type="VI" URL="../subVIs/EncoderConfigurationSubVI.vi"/>
 			<Item Name="TempAcqSubVI.vi" Type="VI" URL="../subVIs/TempAcqSubVI.vi"/>
 			<Item Name="TempConfigurationSubVI.vi" Type="VI" URL="../subVIs/TempConfigurationSubVI.vi"/>
+			<Item Name="TempConfigurationSubVIold.vi" Type="VI" URL="../subVIs/TempConfigurationSubVIold.vi"/>
 		</Item>
+		<Item Name="Variables" Type="Folder">
+			<Item Name="GlobalData.vi" Type="VI" URL="../Variables/GlobalData.vi"/>
+		</Item>
+		<Item Name="DIAcqSubVI.vi" Type="VI" URL="../subVIs/DIAcqSubVI.vi"/>
 		<Item Name="mainVI.vi" Type="VI" URL="../mainVI.vi"/>
+		<Item Name="WebAPIv1" Type="Web Service">
+			<Property Name="ws.guid" Type="Str">{604E5C15-655D-4AC3-BC70-9B63BA6BEC96}</Property>
+			<Item Name="Startup VIs" Type="Startup VIs Container"/>
+			<Item Name="Web Resources" Type="HTTP WebResources Container">
+				<Item Name="GetData.vi" Type="VI" URL="../WebVIs/GetData.vi">
+					<Property Name="ws.method" Type="Int">1</Property>
+					<Property Name="ws.type" Type="Int">1</Property>
+				</Item>
+			</Item>
+		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="Add State(s) to Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Add State(s) to Queue__JKI_lib_State_Machine.vi"/>
@@ -192,6 +218,7 @@
 				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
 				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
 				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
+				<Item Name="NI_WebServices.lvlib" Type="Library" URL="/&lt;vilib&gt;/wsapi/NI_WebServices.lvlib"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Parse State Queue__JKI_lib_State_Machine.vi" Type="VI" URL="/&lt;vilib&gt;/addons/_JKI Toolkits/State Machine/_JKI_lib_State_Machine.llb/Parse State Queue__JKI_lib_State_Machine.vi"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
@@ -211,6 +238,10 @@
 			<Item Name="nilvaiu.dll" Type="Document" URL="nilvaiu.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
+			<Item Name="ws_runtime.dll" Type="Document" URL="ws_runtime.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
+			<Item Name="xd.vi" Type="VI" URL="../xd.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
