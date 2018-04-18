@@ -1,6 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="17008000">
 	<Property Name="SMProvider.SMVersion" Type="Int">201310</Property>
+	<Property Name="varPersistentID:{2BF09B5A-E4D0-479A-8528-8C54C88874AF}" Type="Ref">/My Computer/Variables/SharedVariables.lvlib/testtt</Property>
+	<Property Name="varPersistentID:{63AFDBFE-6AE2-4959-A766-B55A3212B2F6}" Type="Ref">/My Computer/Variables/SharedVariables.lvlib/DataSharedVariable</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="IOScan.Faults" Type="Str"></Property>
 		<Property Name="IOScan.NetVarPeriod" Type="UInt">100</Property>
@@ -25,6 +27,7 @@
 		</Item>
 		<Item Name="Controls" Type="Folder">
 			<Item Name="ShiftRegisterCluster.ctl" Type="VI" URL="../Controls/ShiftRegisterCluster.ctl"/>
+			<Item Name="DataToPublish.ctl" Type="VI" URL="../Controls/DataToPublish.ctl"/>
 		</Item>
 		<Item Name="Documentation" Type="Folder"/>
 		<Item Name="subVIs" Type="Folder">
@@ -40,8 +43,11 @@
 		</Item>
 		<Item Name="Variables" Type="Folder">
 			<Item Name="GlobalData.vi" Type="VI" URL="../Variables/GlobalData.vi"/>
+			<Item Name="SharedVariables.lvlib" Type="Library" URL="../Variables/SharedVariables.lvlib"/>
 		</Item>
 		<Item Name="WebAPIv1" Type="Web Service">
+			<Property Name="Bld_buildSpecName" Type="Str"></Property>
+			<Property Name="Bld_version.build" Type="Int">9</Property>
 			<Property Name="ws.autoIncrementVersion" Type="Bool">true</Property>
 			<Property Name="ws.disconnectInline" Type="Bool">true</Property>
 			<Property Name="ws.disconnectTypeDefs" Type="Bool">false</Property>
@@ -51,9 +57,9 @@
 			<Property Name="ws.removeLibraryItems" Type="Bool">true</Property>
 			<Property Name="ws.removePolyVIs" Type="Bool">true</Property>
 			<Property Name="ws.serveDefaultDoc" Type="Bool">true</Property>
-			<Property Name="ws.SSE2" Type="Bool">true</Property>
+			<Property Name="ws.SSE2" Type="Bool">false</Property>
 			<Property Name="ws.static_permissions" Type="Str"></Property>
-			<Property Name="ws.version.build" Type="Int">0</Property>
+			<Property Name="ws.version.build" Type="Int">9</Property>
 			<Property Name="ws.version.fix" Type="Int">0</Property>
 			<Property Name="ws.version.major" Type="Int">1</Property>
 			<Property Name="ws.version.minor" Type="Int">0</Property>
@@ -67,6 +73,21 @@
 					<Property Name="ws.method" Type="Int">1</Property>
 					<Property Name="ws.outputFormat" Type="Int">2</Property>
 					<Property Name="ws.outputType" Type="Int">1</Property>
+					<Property Name="ws.permissions" Type="Str"></Property>
+					<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
+					<Property Name="ws.type" Type="Int">1</Property>
+					<Property Name="ws.uri" Type="Str"></Property>
+					<Property Name="ws.useHeaders" Type="Bool">true</Property>
+					<Property Name="ws.useStandardURL" Type="Bool">true</Property>
+				</Item>
+				<Item Name="test.vi" Type="VI" URL="../WebVIs/test.vi">
+					<Property Name="ws.buffered" Type="Bool">true</Property>
+					<Property Name="ws.includeNameInURL" Type="Bool">true</Property>
+					<Property Name="ws.keepInMemory" Type="Bool">true</Property>
+					<Property Name="ws.loadAtStartup" Type="Bool">true</Property>
+					<Property Name="ws.method" Type="Int">1</Property>
+					<Property Name="ws.outputFormat" Type="Int">2</Property>
+					<Property Name="ws.outputType" Type="Int">0</Property>
 					<Property Name="ws.permissions" Type="Str"></Property>
 					<Property Name="ws.requireAPIKey" Type="Bool">false</Property>
 					<Property Name="ws.type" Type="Int">1</Property>
