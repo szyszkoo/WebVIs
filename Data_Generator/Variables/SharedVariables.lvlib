@@ -11,6 +11,24 @@
 		<Property Name="type" Type="Str">Network</Property>
 		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#:F1!!!"=!A!!!!!!'!"6!#A!06'6N='6S982V=G6%982B!!R!)1&gt;#&lt;W^M:7&amp;O!"2!1!!"`````Q!""E2*2'&amp;U91!!$U!+!!B75EV42'&amp;U91!!$U!+!!B'=G6R2'&amp;U91!!&amp;E"1!!1!!!!#!!-!"!&gt;$&lt;(6T&gt;'6S!!%!"1!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</Property>
 	</Item>
+	<Item Name="PhysicalChannelsVariable" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">1</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typedefName1" Type="Str">PhysicalChannelsArray.ctl</Property>
+		<Property Name="typedefPath1" Type="PathRel">../../Controls/PhysicalChannelsArray.ctl</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"M;!!!!"=!A!!!!!!#!!A!-0````]!3!$R!!!!!!!!!!%:5'BZ=WFD97R$;'&amp;O&lt;G6M=U&amp;S=G&amp;Z,G.U&lt;!!G1%!!!P``````````!!!25'BZ=WFD97QA1WBB&lt;GZF&lt;(-!!1!"!!!!!!!!!!!!!!!!!!!!!!</Property>
+	</Item>
+	<Item Name="RemoteStart" Type="Variable">
+		<Property Name="featurePacks" Type="Str">Network</Property>
+		<Property Name="Network:UseBinding" Type="Str">False</Property>
+		<Property Name="Network:UseBuffering" Type="Str">False</Property>
+		<Property Name="numTypedefs" Type="UInt">0</Property>
+		<Property Name="type" Type="Str">Network</Property>
+		<Property Name="typeDesc" Type="Bin">&amp;Q#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!!B(1!!!"=!A!!!!!!"!!R!)1&gt;#&lt;W^M:7&amp;O!!%!!!!!!!!!!!!!!!</Property>
+	</Item>
 	<Item Name="testtt" Type="Variable">
 		<Property Name="featurePacks" Type="Str">Network</Property>
 		<Property Name="Network:SingleWriter" Type="Str">False</Property>
